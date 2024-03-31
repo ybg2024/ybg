@@ -1,0 +1,339 @@
+@font-face {
+    font-family: casualtext;
+    src: url(./assets/casualfont/Sugar\ Handy.otf);
+}
+
+@font-face {
+    font-family: messagetext;
+    src: url(./assets/messagefont/More\ Ideas.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    page-break-after: always;
+    visibility: hidden;
+}
+
+#normalbody {
+    background-color: #aee8f5;
+}
+
+#gift1body {
+    background-color: #befaf3;
+}
+
+#gift2body {
+    background-color: #d8ebda;
+}
+
+#gift3body {
+    background-color: #ffd9ef;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+#backtostart {
+    color: black;
+    font-family: casualtext;
+    font-size: 1.5vw;
+}
+
+#backtostart:hover {
+    color: #ebf3f5;
+}
+
+/* page 1 */
+
+.block1 {
+    border: 2vw solid #c5effa;
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ebf3f5;
+}
+
+.maintext, .quizquestion { /* page 1 and 2 */
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    width: fit-content;
+    border: 5px solid #c5effa;
+    border-radius: 25px;
+    background-color: #c5effa;
+    font-family: casualtext;
+    font-size: 2.5vw;
+}
+
+#sleepingpicture {
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(1vw 0 0 #c5effa) 
+        drop-shadow(0 1vw 0 #c5effa)
+        drop-shadow(-1vw 0 0 #c5effa) 
+        drop-shadow(0 -1vw 0 #c5effa);
+}
+
+#zzz {
+    width: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10vw;
+}
+
+.button1, .button2 {
+    display: flex;
+    justify-content: center;
+}
+
+#button1, #button2, #answer1, #answer2, #answer3, #answer4, #goback { /* page 1, 2, and wrong */
+    background-color: #ebf3f5;
+    font-family: casualtext;
+    font-size: 2vw;
+    padding: 0.5vw;
+    border-radius: 5px;
+    border-color: #c5effa;
+    transition-duration: 0.4s;
+}
+
+#button1:hover, #button2:hover, #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #goback:hover { /* page 1, 2, and wrong */
+    background-color: white;
+}
+
+/* page 2 */
+
+#confusedpic {
+    width: 25vw;
+    display: block;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(1vw 0 0 #c5effa) 
+        drop-shadow(0 1vw 0 #c5effa)
+        drop-shadow(-1vw 0 0 #c5effa) 
+        drop-shadow(0 -1vw 0 #c5effa);
+}
+
+#jeopardymusic, #sadaudio, #happybday { /* page 2, wrong page, page 3 */
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.quiz1 {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+}
+
+/* wrong page */
+
+.wrongtext {
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    font-family: casualtext;
+    font-size: 5vw;
+}
+
+#sadgif {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    filter: drop-shadow(1vw 0 0 #c5effa) 
+        drop-shadow(0 1vw 0 #c5effa)
+        drop-shadow(-1vw 0 0 #c5effa) 
+        drop-shadow(0 -1vw 0 #c5effa);
+}
+
+.gobackbutton {
+    display: flex;
+    justify-content: center;
+}
+
+/* page 3 */
+.birthdaytext {
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    font-family: casualtext;
+    font-size: 4vw;
+    width: fit-content;
+    border: 5px solid #c5effa;
+    border-radius: 25px;
+    background-color: #c5effa;
+}
+
+#happygif {
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw;
+    filter: drop-shadow(0.5vw 0 0 #c5effa) 
+        drop-shadow(0 0.5vw 0 #c5effa)
+        drop-shadow(-0.5vw 0 0 #c5effa) 
+        drop-shadow(0 -0.5vw 0 #c5effa);
+}
+
+.gifttext {
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    width: fit-content;
+    border: 5px solid white;
+    border-radius: 25px;
+    background-color: white;
+    font-family: casualtext;
+    font-size: 2.5vw;
+}
+
+.gifttext:hover {
+    border: 5px solid #fff3d4;
+    background-color: #fff3d4;
+}
+
+#giftlink {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+#gift1, #gift2, #gift3 {
+    height: 20vw;
+}
+
+#gift1:hover, #gift2:hover, #gift3:hover {
+    transform: scale(1.25);
+}
+
+.gifts {
+    text-align: center;
+    margin-bottom: 15vw;
+}
+
+/* gifts */
+#page3link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.backtopage3text {
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    width: fit-content;
+    border: 5px solid white;
+    border-radius: 25px;
+    background-color: white;
+    font-family: casualtext;
+    font-size: 2vw;
+}
+
+.backtopage3text:hover {
+    border: 5px solid #fff3d4;
+    background-color: #fff3d4;
+}
+
+.mfytext {
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    font-family: casualtext;
+    font-size: 2.5vw;
+    width: fit-content;
+    border: 5px solid #aee8f5;
+    border-radius: 25px;
+    background-color: #aee8f5;
+}
+
+#pb1, #pb2, #ydt1, #ydt2, #pyro1, #pyro2 {
+    width: 20vw;
+}
+
+#pb1, #ydt1, #pyro1 {
+    margin-top: 1vw;
+    border-radius: 25px;
+}
+
+.threesongs {
+    margin-top: 1vw;
+    text-align: center;
+    display: flex;
+    background-color: #aee8f5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1vw;
+    row-gap: 1vw;
+}
+
+.rwytbtext {
+    text-align: center;
+    margin: auto;
+    margin-top: 1vw;
+    font-family: casualtext;
+    font-size: 3vw;
+}
+
+#picture1, #picture2, #picture3, #picture4, #picture5 {
+    width: 20vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+}
+
+#pic1text, #pic2text, #pic3text, #pic4text, #pic5text {
+    font-size: 1.5vw;
+    font-family: casualtext;
+    margin-left: 1.5vw;
+}
+
+.picture1, .picture2, .picture3, .picture4, .picture5 {
+    display: block;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: 0.5px solid white;
+    background-color: white;
+}
+
+.birthdaymessage {
+    display: block;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: messagetext;
+}
+
+#kissgif {
+    width: 40vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
